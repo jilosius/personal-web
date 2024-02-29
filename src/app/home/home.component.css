@@ -1,15 +1,33 @@
 body {
-    background-color: darkgray;
-    background-image: url("pexels-pixabay-531880.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center;
-    background-size: cover;
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
     font-family: 'Comic Sans';
+    
   }
   
+  .background-image{
+    background-image: url("IMG_0798.JPG");
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover ;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    height: 50vh;
+    
+  }
+
+  .container-space {
+    
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    background-color: rgb(74, 86, 94);
+    margin: 0;
+    padding: 0;
+  }
+
   .example-spacer {
     flex: 1 1 auto;
   }
@@ -17,13 +35,37 @@ body {
   .center-span {
     margin: 0 auto; /* This will center the span horizontally */
   }
+
+  .multiple-box-container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .box-title{
+    margin: 20px;
+  }
+
+  .box-contents{
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  .box{
+    border-radius: 5px;
+    width: 700px;
+    height: 450px;
+    /* font-size: ; */
+    text-align: center;
+    background-color: white;
+    margin: 20px;
+  }
+
   
+
 
 #head1{
   text-align: center;
-  margin: 10px;
-  margin-top: 18%;
-  font-size: 75px;
-  color: aliceblue;
+  margin: 20px;
+  color: rgb(255, 255, 255);
 }
 
