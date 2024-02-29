@@ -1,0 +1,21 @@
+body {
+    background-color: darkgray;
+    background-image: url("C:/Users/HP/OneDrive/Documents/Projects/personal-web/src/app/photos/sci-fi-milky-way-earth-from-space-wallpaper-preview.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .center-span {
+    margin: 0 auto; /* This will center the span horizontally */
+  }
+  .coffee-button{
+    color: aqua;
+    background-color: aqua;
+    font-size: large;
+  }
