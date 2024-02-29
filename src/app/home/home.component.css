@@ -1,21 +1,29 @@
 body {
     background-color: darkgray;
-    background-image: url("C:/Users/HP/OneDrive/Documents/Projects/personal-web/src/app/photos/sci-fi-milky-way-earth-from-space-wallpaper-preview.jpg");
+    background-image: url("pexels-pixabay-531880.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
     background-size: cover;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    font-family: 'Comic Sans';
   }
   
   .example-spacer {
     flex: 1 1 auto;
   }
-
+  
   .center-span {
     margin: 0 auto; /* This will center the span horizontally */
   }
-  .coffee-button{
-    color: aqua;
-    background-color: aqua;
-    font-size: large;
-  }
+  
+
+#head1{
+  text-align: center;
+  margin: 10px;
+  margin-top: 18%;
+  font-size: 75px;
+  color: aliceblue;
+}
+

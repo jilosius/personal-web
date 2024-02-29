@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+$personal-web-primary: mat.define-palette(mat.$blue-gray-palette, 500);
+$personal-web-accent: mat.define-palette(mat.$deep-purple-palette, 900);
+
+// The "warn" palette is optional and defaults to red if not specified.
+$personal-web-warn: mat.define-palette(mat.$red-palette);
+
+$personal-web-typography:mat.define-typography-config(
+    $font-family: 'Comic Sans',
+);
+
+$personal-web-theme: mat.define-light-theme((
+ color: (
+   primary: $personal-web-primary,
+   accent: $personal-web-accent,
+   warn: $personal-web-warn,
+ ),
+ typography: $personal-web-typography,
+ density: 0,
+));
+
+@include mat.all-component-themes($personal-web-theme);
