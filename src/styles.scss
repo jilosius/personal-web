@@ -8,7 +8,7 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
-$personal-web-primary: mat.define-palette(mat.$blue-gray-palette, 500);
+$personal-web-primary: mat.define-palette(mat.$blue-grey-palette, 800); //#FFE0B2
 $personal-web-accent: mat.define-palette(mat.$deep-purple-palette, 900);
 
 // The "warn" palette is optional and defaults to red if not specified.

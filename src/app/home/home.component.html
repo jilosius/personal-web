@@ -1,33 +1,13 @@
 <body>
 
-  <mat-toolbar class="example-spacer" color="primary">
-    <button mat-icon-button>
-      <mat-icon>menu</mat-icon>
-    </button>
+  <mat-toolbar class="toolbar-spacer" color="primary">
+    <span class="toolbar-item" id="toolbar-logo">
+        <img src="assets/S_Logo-new.png" alt="Logo" style="height: 50px; width: 50px; border-radius: 10px; margin-top: 5px;">
+    </span>
+    <span class="toolbar-item" id="toolbar-home">Home</span>
+    <span class="toolbar-item" id="toolbar-news">News</span>
+</mat-toolbar>
 
-    <span class="center-span" style="font-size: larger;">Saif Jilani</span>
-
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="home">
-      <mat-icon>home</mat-icon>
-    </button>
-
-    <button mat-icon-button>
-      <mat-icon>favorite</mat-icon>
-    </button>
-
-    <button mat-icon-button>
-      <mat-icon>photo</mat-icon>
-    </button>
-
-    <button mat-icon-button>
-      <mat-icon>share</mat-icon>
-    </button>
-
-    <button mat-raised-button color="accent">
-      Get in Touch
-    </button>
-  </mat-toolbar>
 
 
   <div class="background-image"></div>
@@ -36,29 +16,69 @@
   <div class="container-space">
     <h1 id="head1">Hello, I'm Saif and welcome to my Website!</h1>
 
-    <div class="multiple-box-container">
-      <div class="box" id="box1">
-        <div class="box-title" id="box-title1"><h1>Title</h1></div>
-        <div class="box-contents" id="box-contents1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, alias unde tenetur dolores aspernatur obcaecati sequi suscipit reprehenderit voluptatum maxime molestias ipsam repudiandae vel soluta doloribus sapiente, libero perspiciatis odio?</div>
+    <div class="multiple-card-container">
+      <div class="card" id="box1" [class.rotated]="rotateState" (click)="rotateBox()">
+        <div class="card-side front" id="box-contents1">
+          <div class="card-title">
+            <h1>About me</h1>
+          </div>
+          <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, alias unde tenetur dolores aspernatur obcaecati sequi suscipit reprehenderit voluptatum maxime molestias ipsam repudiandae vel soluta doloribus sapiente, libero perspiciatis odio?
+          </div>
+        </div>
+        <div class="card-side back">
+          <div class="card-title"> <h1>Hello for the back side</h1> </div>
+          <div>back side</div>
+        </div>
       </div>
         
      
-      <div class="box" id="box2">
-        <div class="box-title" id="box-title2"><h1>Title</h1></div>
-        <div class="box-contents" id="box-contents1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet accusantium doloremque ullam beatae, id at dolore necessitatibus dicta quae hic sed laudantium quos laborum magni! Facere ab veniam est hic.</div>
+      <div class="card" id="box2" [class.rotated]="rotateState" (click)="rotateBox()">
+        <div class="card-side front" id="box-contents2">
+          <div class="card-title">
+            <h1>Career</h1>
+          </div>
+          <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, alias unde tenetur dolores aspernatur obcaecati sequi suscipit reprehenderit voluptatum maxime molestias ipsam repudiandae vel soluta doloribus sapiente, libero perspiciatis odio?
+          </div>
+        </div>
+        <div class="card-side back">
+          <div class="card-title"> <h1>Hello for the back side</h1> </div>
+          <div>back side</div>
+        </div>
       </div>
         
     </div>
 
-    <div class="multiple-box-container">
-      <div class="box" id="box3">
-        <div class="box-title" id="box-title3"><h1>Title</h1></div>
-        <div class="box-contents" id="box-contents1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, ipsum. Blanditiis voluptatibus unde itaque, ea, est illo aliquam, explicabo architecto dolores eveniet nulla facilis sapiente delectus sit nesciunt? Dicta, ullam!</div>
+    <div class="multiple-card-container">
+      <div class="card" id="box3" [class.rotated]="rotateState" (click)="rotateBox()">
+        <div class="card-side front" id="box-contents1">
+          <div class="card-title">
+            <h1>Activities/Hobbies/Interests</h1>
+          </div>
+          <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, alias unde tenetur dolores aspernatur obcaecati sequi suscipit reprehenderit voluptatum maxime molestias ipsam repudiandae vel soluta doloribus sapiente, libero perspiciatis odio?
+          </div>
+        </div>
+        <div class="card-side back">
+          <div class="card-title"> <h1>Hello for the back side</h1> </div>
+          <div>back side</div>
+        </div>
       </div>
 
-      <div class="box" id="box4">
-        <div class="box-title" id="box-title4"><h1>Title</h1></div>
-        <div class="box-contents" id="box-contents1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus exercitationem hic eos ut, autem eligendi, molestias tempora voluptates, corporis deserunt! Assumenda, earum repellendus. Voluptatibus quos quibusdam expedita facilis similique!</div>
+      <div class="card" id="box4" [class.rotated]="rotateState" (click)="rotateBox()">
+        <div class="card-side front" id="box-contents1">
+          <div class="card-title">
+            <h1>Gallery</h1>
+          </div>
+          <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, alias unde tenetur dolores aspernatur obcaecati sequi suscipit reprehenderit voluptatum maxime molestias ipsam repudiandae vel soluta doloribus sapiente, libero perspiciatis odio?
+          </div>
+        </div>
+        <div class="card-side back">
+          <div class="card-title"> <h1>Hello for the back side</h1> </div>
+          <div>back side</div>
+        </div>
       </div>
 
     </div>
