@@ -1,12 +1,13 @@
 <body>
 
   <mat-toolbar class="toolbar-spacer" color="primary">
-    <span class="toolbar-item" id="toolbar-logo">
+    <a class="toolbar-item" id="toolbar-logo" routerLink="">
         <img src="assets/S_Logo-new.png" alt="Logo" style="height: 50px; width: 50px; border-radius: 10px; margin-top: 5px;">
-    </span>
-    <span class="toolbar-item" id="toolbar-home">Home</span>
-    <span class="toolbar-item" id="toolbar-news">News</span>
-</mat-toolbar>
+    </a>
+    <a class="toolbar-item" id="toolbar-home" routerLink="">Home</a>
+    <a class="toolbar-item" id="toolbar-news" routerLink="/news">News</a>
+    <a class="toolbar-item" id="toolbar-contact">Get in Touch</a>
+  </mat-toolbar>
 
 
 
@@ -17,8 +18,8 @@
     <h1 id="head1">Hello, I'm Saif and welcome to my Website!</h1>
 
     <div class="multiple-card-container">
-      <div class="card" id="box1" [class.rotated]="rotateState" (click)="rotateBox()">
-        <div class="card-side front" id="box-contents1">
+      <div class="card" id="card1">
+        <div class="card-side front" id="card-contents1">
           <div class="card-title">
             <h1>About me</h1>
           </div>
@@ -31,10 +32,8 @@
           <div>back side</div>
         </div>
       </div>
-        
-     
-      <div class="card" id="box2" [class.rotated]="rotateState" (click)="rotateBox()">
-        <div class="card-side front" id="box-contents2">
+      <div class="card" id="card2">
+        <div class="card-side front" id="card-contents2">
           <div class="card-title">
             <h1>Career</h1>
           </div>
@@ -47,12 +46,11 @@
           <div>back side</div>
         </div>
       </div>
-        
     </div>
 
     <div class="multiple-card-container">
-      <div class="card" id="box3" [class.rotated]="rotateState" (click)="rotateBox()">
-        <div class="card-side front" id="box-contents1">
+      <div class="card" id="card3">
+        <div class="card-side front" id="card-contents3">
           <div class="card-title">
             <h1>Activities/Hobbies/Interests</h1>
           </div>
@@ -65,9 +63,8 @@
           <div>back side</div>
         </div>
       </div>
-
-      <div class="card" id="box4" [class.rotated]="rotateState" (click)="rotateBox()">
-        <div class="card-side front" id="box-contents1">
+      <div class="card" id="card4">
+        <div class="card-side front" id="card-contents4">
           <div class="card-title">
             <h1>Gallery</h1>
           </div>
@@ -80,7 +77,17 @@
           <div>back side</div>
         </div>
       </div>
-
     </div>
+
+    <div class="footer">
+      <div>
+        <h1>Here goes the footer</h1>
+      </div>
   </div>
+  </div>
+
+  
+
 </body>
+
+<router-outlet></router-outlet>

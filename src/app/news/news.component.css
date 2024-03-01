@@ -1,0 +1,38 @@
+body {
+    font-family: 'Comic Sans';
+    
+  }
+
+  .toolbar-spacer {
+    display: flex;
+  }
+
+  .toolbar-item{
+    font-size: 23px;
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  
+
+  #toolbar-logo{
+    margin-left: 25%;
+  }
+
+  #toolbar-home{
+    margin-left: 17%;
+  }
+
+  #toolbar-news{
+    margin-left: 2.5%;
+  }
+
+  #toolbar-contact{
+    margin-left: 35%;
+  }
+  
+  .toolbar-item:hover{
+    text-decoration: underline;
+    font-weight: bold;
+  }
