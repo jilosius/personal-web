@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule, NgStyle } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule} from './app.routes';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-import { Router, RouterModule } from '@angular/router';
-
-
-
+import { AppRoutingModule } from './app.routes';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [],
@@ -15,10 +13,10 @@ import { Router, RouterModule } from '@angular/router';
     CommonModule,
     BrowserModule,
     AppRoutingModule,
-    NgStyle,
     MatToolbarModule,
     MatIconModule,
-    RouterModule
-  ]
+    RouterModule,
+    HttpClientModule
+  ],
 })
-export class AppModule { }
+export class AppModule {}
